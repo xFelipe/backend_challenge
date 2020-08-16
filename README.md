@@ -1,9 +1,10 @@
 # Backend Developer Challenge
 This is a simple challenge to test your skills on building APIs and your logic.
-It has to be done using Python and the Django Framework
+It has to be done using Python and Django/Django Rest Framework
 
 # What to do
-Create a Rest API that controls a car maintenance status, and the trips it performs. Note that, each litre of gas can run 8 KM and every 3 KM the tyres degrades by 1%:
+Create a Rest API that controls a car maintenance status, and the trips it performs. Note that, each litre of gas can run 8 KM and every 3 KM the tyres degrades by 1%.
+
 
 # Objects:
 - Tyre
@@ -46,7 +47,8 @@ Create a Rest API that controls a car maintenance status, and the trips it perfo
 - The car **cannot** travel without gas or one of its tyres
 
 # Challenge
-Write an algorithm in the form of UnitTest that runs a trip of 10.000 KM, without breaking any part or swapping cars or gets out of gas
+- Write an algorithm in the form of UnitTest that runs a trip of 10.000 KM, without breaking any part or swapping cars or gets out of gas.
+- Document your project, with instructions on how to setup and run a working example.
 
 # Recommendations
 - SOLID / DRY
