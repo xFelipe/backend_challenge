@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from car.views import create_car
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('CreateCar/', create_car)
 ]
