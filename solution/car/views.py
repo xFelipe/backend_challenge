@@ -77,7 +77,7 @@ def refuel(request):
 def maintenance(request):
     try:
         car_pk = int(request.data['car'])
-        tyre_pk = int(request.data['part_to_replace'])  # Acepted: 'tyres'
+        tyre_pk = int(request.data['part_to_replace'])
     except (ValueError, KeyError) as e:
         logging.exception(e)
         return Response(
