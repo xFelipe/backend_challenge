@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "a6f3374a-dad5-4eca-8fc1-1df239f529a5",
+		"name": "backend challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/CreateCar",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"CreateCar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trip",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"car\": 1,\n    \"distance\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/Trip",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Trip"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCarStatus",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"car\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/GetCarStatus",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"GetCarStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refuel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"car\": 1,\n    \"gas_quantity\": 30\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/Refuel",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Refuel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintenance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"car\": 1,\n    \"part_to_replace\": 9\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/Maintenance",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Maintenance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTyre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"car\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/CreateTyre",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"CreateTyre"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
