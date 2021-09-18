@@ -3,6 +3,7 @@
 ## How build the project
  - `cd solution`
  - `pip install pipenv`
+ - `pipenv install`
  - `pipenv shell`
  - `python manage.py migrate`
 

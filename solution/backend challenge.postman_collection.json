@@ -60,7 +60,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"car\": 1\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -68,13 +68,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8000/GetCarStatus",
+					"raw": "localhost:8000/GetCarStatus/1",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"GetCarStatus"
+						"GetCarStatus",
+						"1"
 					]
 				}
 			},
