@@ -19,9 +19,9 @@ def create_car(request):
     )
 
 @api_view()
-def get_car_status(request):
+def get_car_status(request, car):
     try:
-        car_pk = int(request.data['car'])
+        car_pk = int(car)
     except (ValueError, KeyError) as e:
         logging.exception(e)
         return Response({
@@ -109,7 +109,7 @@ def create_tyre(request):
         car.add_tyre()
     except ValueError as e:
         return _error(e)
-    return Response(car.resume)
+    return Response(car.resume, status=201)
 
 
 def _error(e: Exception):

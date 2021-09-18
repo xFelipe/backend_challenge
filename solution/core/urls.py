@@ -22,7 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('CreateCar', create_car),
     path('Trip', trip),
-    path('GetCarStatus', get_car_status),
+    path('GetCarStatus/<int:car>', get_car_status),
     path('Refuel', refuel),
     path('Maintenance', maintenance),
     path('CreateTyre', create_tyre)
